@@ -1,0 +1,83 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Try programiz.pro");
+    }
+    
+}
+ class Book
+{
+  public string Author{get;set;}  
+  public string Title{get;set;}
+  public bool IsAvailable{get;set;}
+  public DateTime timeBorrowed{get;set;}
+  
+  public Book(string author,string title)
+  {
+      Title = title;
+      Author = author;
+      IsAvailable = true;
+      
+  }
+  class LibraryMember
+  {
+      private static int s_IDseed = 123;
+      public string Name{get;set;}
+      int ID get
+      {
+          get{
+              return s_IDseed++;
+          }
+      }
+  }
+  
+  public List<Books> BorrrowedBooks{get;set;}
+      
+  public LibrayMember(string name)
+  {
+      Name = name;
+      BorrowedBooks = new List<Book>();
+  }}
+  
+  class Libray
+  {
+      List<Book> Books{get;set;}
+      List<LibraryMember> Members{get;set;}
+      
+      public Library()
+      {
+              Books = new List<Book>();
+            Members = new List<LibraryMember>();
+        }
+     
+     public Library(List<Books>listBook)
+     {
+         Books = listbook;
+     }
+     
+     
+    
+        
+      }
+    
+      
+  }
+  
+  
+  
+  
+  
+  /*class Library(List<Book>listBook)
+  {
+      Books = listbooks;
+  }
+  */
+  
+
+}
